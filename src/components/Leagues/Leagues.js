@@ -25,23 +25,23 @@ const Leagues = ({sport}) => {
     return (
         <div>
             <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={strBadge}
-          title={strLeague}
-        />
-        <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
-            <strong>{strLeague}</strong>
-          </Typography>
-          <Typography gutterBottom variant="p" component="p">
-          Sports type: <strong>{strSport}</strong>
-          </Typography>
-          <Link to={`league/${idLeague}`}><Button variant="contained" color="primary"> Explore</Button></Link>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+             <CardActionArea>
+               <CardMedia
+                className={classes.media}
+                image={strBadge}
+                title={strLeague}
+               />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    <strong>{strLeague}</strong>
+                  </Typography>
+                  <Typography gutterBottom variant="p" component="p">
+                      Sports type: <strong>{strSport}</strong>
+                  </Typography>
+                  <Link to={`league/${idLeague}`}><Button variant="contained" color="primary"> Explore</Button></Link>
+                </CardContent>
+              </CardActionArea>
+            </Card>
         </div>
     );
 };

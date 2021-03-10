@@ -7,10 +7,11 @@ import { useParams } from 'react-router';
 import female from '../Image/female.png';
 import male from '../Image/male.png';
 import './LeagueDetail.css';
+
 const LeagueDetail = () => {
    const {id}=useParams()
    const [league, setLeague] = useState({})
-   const {strLeague,intFormedYear,strCountry,strSport,strDescriptionEN,strTwitter,strYoutube,strWebsite}=league
+   const {strLeague,intFormedYear,strCountry,strSport,strDescriptionEN,strTwitter,strYoutube,strWebsite,strBadge,strBanner}=league
    let {strGender}=league
    console.log(league);
    useEffect(() => {
@@ -18,8 +19,21 @@ const LeagueDetail = () => {
        .then(res=>res.json())
        .then(data=>setLeague(data.leagues[0]))
    }, [id])
+   const divStyle={
+        width: '100%',
+        height:"auto",
+        backgroundImage: `url(${strBanner})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "100% 100%",
+        backgroundColor:'linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86))',
+                                        }
     return (
              <div>
+                 <div className='banner-area' style={divStyle}>
+                    <div>
+                    <img src={strBadge} alt=""/>
+                    </div>
+                 </div>
                 <div className='league-container'> 
                     <div className='league-info'>
                     <h1>{strLeague}</h1>
@@ -30,17 +44,17 @@ const LeagueDetail = () => {
 
                     </div>
                     <div className='league-image'>
-                    <img src={strGender=='Male'? male:female} alt=""/>
+                    <img src={strGender==='Male'? male:female} alt=""/>
                     </div>
                     
                 </div>
                 <h3>{strDescriptionEN}</h3>
                 <br/>
                 <br/>
-                <footer>
-                    <a href={strTwitter}><FaTwitter/></a> 
-                    <a href={strYoutube}><FaYoutube/></a> 
-                    <a href={strWebsite}><FaWeebly/></a>
+                <footer className='footer-area'>
+                    <a href={`http://${strTwitter}`}><FaTwitter/></a> 
+                    <a href={`http://${strYoutube}`}><FaYoutube/></a> 
+                    <a href={`http://${strWebsite}`}><FaWeebly/></a>
                 </footer>
              </div>       
         
