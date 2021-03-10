@@ -1,0 +1,50 @@
+.sport-container {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: space-around;
+
+  /* border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  background-color: gainsboro;
+  justify-content: space-around; */
+}
+.home-container {
+  background-color: rgb(21, 45, 117);
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+@media (max-width: 1750px) {
+  .sport-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sport-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .sport-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .sport-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+}
