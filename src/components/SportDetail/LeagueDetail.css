@@ -41,6 +41,7 @@ body {
 }
 h3 {
   margin: 5rem;
+  text-align: justify;
 }
 .footer-area {
   text-align: center;
@@ -67,6 +68,7 @@ h3 {
   .league-info {
     padding: 0;
     width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
