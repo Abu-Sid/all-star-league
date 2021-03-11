@@ -26,7 +26,7 @@ body {
 }
 .league-image {
   object-fit: contain;
-  width: 400px;
+  width: 100%;
   padding: 1rem;
 }
 .league-image > img {
@@ -50,7 +50,7 @@ h3 {
   font-size: 5rem;
   padding: 1rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 1050px) {
   .league-container {
     flex-direction: column;
     margin: 0;
@@ -62,7 +62,26 @@ h3 {
   }
   .league-image {
     object-fit: contain;
-    width: 370px;
+    width: 100%;
+  }
+  .league-info {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .league-container {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  h3 {
+    margin: 0;
+  }
+  .league-image {
+    object-fit: contain;
+    width: 100%;
   }
   .league-info {
     padding: 0;

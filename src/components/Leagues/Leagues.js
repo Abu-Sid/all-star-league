@@ -12,10 +12,10 @@ const Leagues = ({sport}) => {
         root: {
             textAlign: 'center',
             fontSize:"20px",
-            maxWidth: 300,
+            maxWidth: "100%",
         },
         media: {
-            width: 300,
+            width: "100%",
             height: 150,
             backgroundSize: 'contain',
         },
