@@ -1,23 +1,11 @@
 # react-router-Abu-Sid
 
-## React Router
+## React Router Assignment
 
-In the project directory:
+In the project i have deployed a react router based USA All Star Sports League site where user can select specific league for details.
+in this project i had used css grid, flex, react-bootstrap, and material-UI for responsive site.
+I have deployed this project via netlify website.
 
-### `npm start`
+### Live Site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[https://romantic-franklin-ed40a7.netlify.app/](https://romantic-franklin-ed40a7.netlify.app/)

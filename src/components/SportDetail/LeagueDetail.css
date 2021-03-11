@@ -18,7 +18,7 @@ body {
 .league-container {
   border: 1px solid;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0rem;
   background-color: rgb(77, 116, 233);
   border-radius: 10px;

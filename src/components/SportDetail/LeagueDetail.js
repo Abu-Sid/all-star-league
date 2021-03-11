@@ -8,12 +8,12 @@ import female from '../Image/female.png';
 import male from '../Image/male.png';
 import './LeagueDetail.css';
 
+
 const LeagueDetail = () => {
    const {id}=useParams()
    const [league, setLeague] = useState({})
-   const {strLeague,intFormedYear,strCountry,strSport,strDescriptionEN,strTwitter,strYoutube,strWebsite,strBadge,strBanner}=league
-   let {strGender}=league
-   console.log(league);
+   const {strLeague,intFormedYear,strCountry,strSport,strDescriptionEN,strTwitter,strYoutube,strWebsite,strBadge,strBanner}=league;
+   let {strGender}=league;
    useEffect(() => {
        fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${id}`)
        .then(res=>res.json())
@@ -44,7 +44,7 @@ const LeagueDetail = () => {
 
                     </div>
                     <div className='league-image'>
-                    <img src={strGender==='Male'? male:female} alt=""/>
+                    <img src={strGender !=='Mixed'? male:female} alt=""/>
                     </div>
                     
                 </div>
