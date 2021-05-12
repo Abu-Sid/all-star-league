@@ -1,11 +1,10 @@
-# react-router-Abu-Sid
-
-## React Router Assignment
-
-In this project i have deployed a react router based USA All Star Sports League site where user can select specific league for details.
-For make sit responsive had used css grid, flex, react-bootstrap, and material-UI.
-I have deployed this project via netlify website.
+## All Start League
 
 ### Live Site
 
 [https://romantic-franklin-ed40a7.netlify.app/](https://romantic-franklin-ed40a7.netlify.app/)
+
+Get all information about your favorite team in USA All Start League. An user can check the details about their favorite team along with the team social platform link to follow.
+
+This is a fully responsive web application build with react and react router.  
+In this project i have used css flexbox , grid and bootstrap for responsiveness and hoist it in netlify.

@@ -8,6 +8,7 @@ const NoMatch = () => {
         <div style={divStyle}>
             <h1>Error 404!!</h1>
             <h4>Data Not Found</h4>
+            
         </div>
     );
 };
